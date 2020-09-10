@@ -6,6 +6,7 @@ nav{
   top: 40vh;
    text-align: center;
    width: 100%;
+   z-index: 3;
 }
 .carouselCaption h1{
   color: white;
@@ -20,5 +21,15 @@ nav{
 .carousel img{
   object-fit: cover;
   height: 98vh;
-  width: 101vw;
+  width: 102vw;
+  z-index: 0;
+}
+.image_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102vw;
+  height: 98vh;
+  background-color: rgba(0, 0, 0, 0.5);;
+  z-index: 1;
 }
