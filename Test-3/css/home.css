@@ -1,3 +1,4 @@
+
 .carouselCaption{
   position: absolute;
   top: 40vh;
@@ -17,4 +18,5 @@
 .carousel img{
   object-fit: cover;
   height: 98vh;
+  width: 101vw;
 }
