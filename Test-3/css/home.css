@@ -1,4 +1,6 @@
-
+nav{
+  border-bottom: 2px solid red;
+}
 .carouselCaption{
   position: absolute;
   top: 40vh;
