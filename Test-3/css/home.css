@@ -19,17 +19,22 @@ nav{
   font-weight: 500;
 }
 .carousel img{
-  object-fit: cover;
-  height: 98vh;
+  object-fit: scale-down;
+  height: 75vh;
   width: 102vw;
   z-index: 0;
+  background-color: #212529;
 }
 .image_overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 102vw;
-  height: 98vh;
+  height: 75vh;
   background-color: rgba(0, 0, 0, 0.5);;
   z-index: 1;
+  border-bottom: 3px solid red;
+}
+.homeContent .row .col-sm-6{
+  border: 2px solid black;
 }
