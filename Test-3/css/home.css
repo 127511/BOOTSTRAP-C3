@@ -49,6 +49,11 @@ footer{
   border-top: 3px solid red;
 
 }
-body{
-  min-height: 100vh;
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
 }
