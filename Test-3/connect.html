@@ -51,13 +51,13 @@
         <div class="row">
           <div class="col">
             <h2>SIGN UP FOR THE NEWSLETTER</h2>
-                <form>
+                <form method="post" action="">
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover1">
-                      <input type="text" class="form-control" placeholder="First name" required>
+                      <input type="text" class="form-control" placeholder="First name">
                     </div>
                     <div class="col hoverItem" id="hover2">
-                      <input type="text" class="form-control" placeholder="Last name" required>
+                      <input type="text" class="form-control" placeholder="Last name">
                     </div>
                   </div>
                       <div class="collapse" id="collapse1">
@@ -72,7 +72,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover3">
-                      <input type="text" class="form-control" placeholder="Email Address" required>
+                      <input type="text" class="form-control" placeholder="Email Address">
                     </div>
                   </div>
                       <div class="collapse" id="collapse3">
@@ -82,7 +82,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover4">
-                      <input type="text" class="form-control" placeholder="Address Line 1" required>
+                      <input type="text" class="form-control" placeholder="Address Line 1">
                     </div>
                   </div>
                       <div class="collapse" id="collapse4">
@@ -92,7 +92,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover5">
-                      <input type="text" class="form-control" placeholder="Address Line 2" required>
+                      <input type="text" class="form-control" placeholder="Address Line 2">
                     </div>
                   </div>
                       <div class="collapse" id="collapse5">
@@ -102,10 +102,10 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover6">
-                      <input type="text" class="form-control" placeholder="Zip Code" required>
+                      <input type="text" class="form-control" placeholder="Zip Code">
                     </div>
                     <div class="col hoverItem" id="hover7">
-                      <input type="text" class="form-control" placeholder="Country" required>
+                      <input type="text" class="form-control" placeholder="Country">
                     </div>
                   </div>
                       <div class="collapse" id="collapse6">
@@ -120,11 +120,32 @@
                       </div>
                   <div class="row">
                     <div class="col">
-                      <button type="submit" class="btn btn-danger mb-2" id="formSubmit" style="width: 100%;">Submit</button>
+                      <button type="button" class="btn btn-danger mb-2" id="formSubmit" style="width: 100%;" data-toggle="modal" data-target="#exampleModal">Submit</button>
 
                     </div>
                   </div>
-                </form>
+                  </form>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Confirmation Message</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Are you sure you want to sign up for the newsletter and the entered data is correct?
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Sign me up</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
 
           </div>
           <div class="col">
