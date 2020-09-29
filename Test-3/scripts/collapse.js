@@ -1,6 +1,6 @@
 $('#hover1').mouseenter(function(){
   if ($('#collapse1').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse1').one('hidden.bs.collapse', function () {
       $('#collapse1').collapse('show');
     });
@@ -10,7 +10,7 @@ $('#hover1').mouseenter(function(){
 });
 $('#hover1').mouseleave(function(){
   if ($('#collapse1').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse1').one('shown.bs.collapse', function () {
       $('#collapse1').collapse('hide');
     });
@@ -21,7 +21,7 @@ $('#hover1').mouseleave(function(){
 
 $('#hover2').mouseenter(function(){
   if ($('#collapse2').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse2').one('hidden.bs.collapse', function () {
       $('#collapse2').collapse('show');
     });
@@ -31,7 +31,7 @@ $('#hover2').mouseenter(function(){
 });
 $('#hover2').mouseleave(function(){
   if ($('#collapse2').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse2').one('shown.bs.collapse', function () {
       $('#collapse2').collapse('hide');
     });
@@ -42,7 +42,7 @@ $('#hover2').mouseleave(function(){
 
 $('#hover3').mouseenter(function(){
   if ($('#collapse3').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse3').one('hidden.bs.collapse', function () {
       $('#collapse3').collapse('show');
     });
@@ -52,7 +52,7 @@ $('#hover3').mouseenter(function(){
 });
 $('#hover3').mouseleave(function(){
   if ($('#collapse3').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse3').one('shown.bs.collapse', function () {
       $('#collapse3').collapse('hide');
     });
@@ -63,7 +63,7 @@ $('#hover3').mouseleave(function(){
 
 $('#hover4').mouseenter(function(){
   if ($('#collapse4').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse4').one('hidden.bs.collapse', function () {
       $('#collapse4').collapse('show');
     });
@@ -73,7 +73,7 @@ $('#hover4').mouseenter(function(){
 });
 $('#hover4').mouseleave(function(){
   if ($('#collapse4').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse4').one('shown.bs.collapse', function () {
       $('#collapse4').collapse('hide');
     });
@@ -84,7 +84,7 @@ $('#hover4').mouseleave(function(){
 
 $('#hover5').mouseenter(function(){
   if ($('#collapse5').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse5').one('hidden.bs.collapse', function () {
       $('#collapse5').collapse('show');
     });
@@ -94,7 +94,7 @@ $('#hover5').mouseenter(function(){
 });
 $('#hover5').mouseleave(function(){
   if ($('#collapse5').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse5').one('shown.bs.collapse', function () {
       $('#collapse5').collapse('hide');
     });
@@ -105,7 +105,7 @@ $('#hover5').mouseleave(function(){
 
 $('#hover6').mouseenter(function(){
   if ($('#collapse6').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse6').one('hidden.bs.collapse', function () {
       $('#collapse6').collapse('show');
     });
@@ -115,7 +115,7 @@ $('#hover6').mouseenter(function(){
 });
 $('#hover6').mouseleave(function(){
   if ($('#collapse6').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse6').one('shown.bs.collapse', function () {
       $('#collapse6').collapse('hide');
     });
@@ -126,7 +126,7 @@ $('#hover6').mouseleave(function(){
 
 $('#hover7').mouseenter(function(){
   if ($('#collapse7').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse7').one('hidden.bs.collapse', function () {
       $('#collapse7').collapse('show');
     });
@@ -136,7 +136,7 @@ $('#hover7').mouseenter(function(){
 });
 $('#hover7').mouseleave(function(){
   if ($('#collapse7').hasClass('collapsing')) {
-    console.log('true');
+
     $('#collapse7').one('shown.bs.collapse', function () {
       $('#collapse7').collapse('hide');
     });

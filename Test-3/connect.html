@@ -51,13 +51,23 @@
         <div class="row">
           <div class="col">
             <h2>SIGN UP FOR THE NEWSLETTER</h2>
+                <div id="alertSucces" class="alert alert-success collapse" role="alert">
+                  <strong>Succes!</strong>
+                  You successfully signed up for the newsletter.
+                  <a href="#" class="close" data-dismiss="alert">&times;</a>
+                </div>
+                <div id="alertError" class="alert alert-danger collapse" role="alert">
+                  <strong>Error!</strong>
+                  Make sure you fill in all required fields.
+                  <a href="#" class="close" data-dismiss="alert">&times;</a>
+                </div>
                 <form method="post" action="">
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover1">
-                      <input type="text" class="form-control" placeholder="First name">
+                      <input type="text" class="form-control toValidate0" placeholder="First name">
                     </div>
                     <div class="col hoverItem" id="hover2">
-                      <input type="text" class="form-control" placeholder="Last name">
+                      <input type="text" class="form-control toValidate1" placeholder="Last name">
                     </div>
                   </div>
                       <div class="collapse" id="collapse1">
@@ -72,7 +82,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover3">
-                      <input type="text" class="form-control" placeholder="Email Address">
+                      <input type="text" class="form-control toValidate2" placeholder="Email Address">
                     </div>
                   </div>
                       <div class="collapse" id="collapse3">
@@ -82,7 +92,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover4">
-                      <input type="text" class="form-control" placeholder="Address Line 1">
+                      <input type="text" class="form-control toValidate3" placeholder="Address Line 1">
                     </div>
                   </div>
                       <div class="collapse" id="collapse4">
@@ -102,10 +112,10 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover6">
-                      <input type="text" class="form-control" placeholder="Zip Code">
+                      <input type="text" class="form-control toValidate4" placeholder="Zip Code">
                     </div>
                     <div class="col hoverItem" id="hover7">
-                      <input type="text" class="form-control" placeholder="Country">
+                      <input type="text" class="form-control toValidate5" placeholder="Country">
                     </div>
                   </div>
                       <div class="collapse" id="collapse6">
@@ -140,7 +150,7 @@
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                          <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Sign me up</button>
+                          <button type="button" id="validateForm" class="btn btn-danger" data-dismiss="modal">Yes, Sign me up</button>
                         </div>
                       </div>
                     </div>
