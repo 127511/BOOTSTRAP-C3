@@ -1,4 +1,6 @@
 <?php
+include("database/db_create.php");
+include("database/db_create_table.php");
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -7,7 +9,7 @@ $dbname = "c3_commentdb";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+
 }
 ?>
 <!doctype html>
@@ -87,7 +89,7 @@ if ($conn->connect_error) {
                 if ($conn->query($sql) === TRUE) {
                   $conn->close();
                 } else {
-                  echo "Error: " . $sql . "<br>" . $conn->error;
+
                 }
               }
 
