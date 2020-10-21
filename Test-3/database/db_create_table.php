@@ -17,21 +17,31 @@ $sql = "CREATE TABLE IF NOT EXISTS comments (
   primary key (id)
 );";
 if ($conn->query($sql) === TRUE) {
-  $sql = "INSERT IGNORE INTO comments (id, username, comment, date)
-    VALUES ('', 'Adam Adams','Nice website! Im here every single day!','2020-07-11')";
-    if ($conn->query($sql) === TRUE) {
-
-    } else {
-      echo "Error creating database: " . $conn->error;
-    }
-
+  $sql = "ALTER TABLE comments ADD UNIQUE INDEX(comment)";
+  if ($conn->query($sql) === TRUE) {
     $sql = "INSERT IGNORE INTO comments (id, username, comment, date)
-      VALUES ('', 'Khabib Nurmagomedov','Ey! You misspelled my name in the rankings.','2020-04-25')";
+      VALUES ('', 'Adam Adams','Nice website! Im here every single day!','2020-07-11')";
       if ($conn->query($sql) === TRUE) {
 
       } else {
         echo "Error creating database: " . $conn->error;
       }
+
+      $sql = "INSERT IGNORE INTO comments (id, username, comment, date)
+        VALUES ('', 'Khabib Nurmagomedov','Ey! You misspelled my name in the rankings.','2020-04-25')";
+        if ($conn->query($sql) === TRUE) {
+
+        } else {
+          echo "Error creating database: " . $conn->error;
+        }
+  } else {
+    echo "Error creating database: " . $conn->error;
+  }
+
+
+
+
+
 } else {
   echo "Error creating database: " . $conn->error;
 }
