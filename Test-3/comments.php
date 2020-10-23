@@ -44,7 +44,7 @@ if ($conn->connect_error) {
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="connect.html">Connect</a>
+                <a class="nav-link" href="connect.php">Connect</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="comments.php">Comments <span class="sr-only">(current)</span></a>

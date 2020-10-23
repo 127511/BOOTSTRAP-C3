@@ -30,7 +30,7 @@
                 <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="connect.html">Connect <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="connect.php">Connect <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="comments.php">Comments</a>
@@ -51,7 +51,7 @@
                 </div>
                 <div id="alertError" class="alert alert-danger collapse" role="alert">
                   <strong>Error!</strong>
-                  Make sure you fill in all required fields.
+                  Make sure you fill in all required fields with the correct information..
                   <a href="#" class="close" data-dismiss="alert">&times;</a>
                 </div>
                 <form method="post" action="">
@@ -95,7 +95,7 @@
                       </div>
                   <div class="row mb-2">
                     <div class="col hoverItem" id="hover5">
-                      <input type="text" class="form-control" placeholder="Address Line 2">
+                      <input type="text" class="form-control toValidate6" placeholder="Address Line 2">
                     </div>
                   </div>
                       <div class="collapse" id="collapse5">
